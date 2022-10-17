@@ -1,22 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-public class PlayerController : ChecksController
-{
 
-    public float _speed = 5f;
-    private void FixedUpdate()
+public class PlayerController : MoveController
+{
+    protected override void OnCantMove<T>(T component)
     {
-        Grounded();
-        _rb2D.MovePosition((Vector2)transform.position + _moveInput * Time.fixedDeltaTime * _speed);
+        throw new System.NotImplementedException();
     }
-    void OnMove(InputValue movementValue)
+
+    // Start is called before the first frame update
+    void Start()
     {
-        _moveInput = movementValue.Get<Vector2>();
+        
     }
-    void OnShoot()
+
+    // Update is called once per frame
+    void Update()
     {
-        Debug.Log("Kill Cats");
+        
     }
-}   
+}
