@@ -82,7 +82,7 @@ public class BoardManager : MonoBehaviour
             Vector3 randomPosition = RandomPosition();
             GameObject tileChoice = array[Random.Range(0,array.Length)];
             GameObject instante = Instantiate(tileChoice,randomPosition,Quaternion.identity);
-            instante.transform.SetParent(_boardHolder);
+            //instante.transform.SetParent(_boardHolder);
 
         }
     }

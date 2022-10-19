@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2249734053463961682}
   - component: {fileID: 2249734053463961685}
   - component: {fileID: 2249734053463961684}
-  - component: {fileID: -637128118777183496}
+  - component: {fileID: 5575579977393948636}
   m_Layer: 0
   m_Name: TileWall
   m_TagString: Untagged
@@ -112,7 +112,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-637128118777183496
+--- !u!114 &5575579977393948636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,8 +121,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2249734053463961687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97498540aa5fa704b9e80ab344c3bceb, type: 3}
+  m_Script: {fileID: 11500000, guid: 8106ee030f2aa4040b2464da4a51a1de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmgSprite: {fileID: 0}
-  hp: 4
+  moveTime: 0.1
+  blockingLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  _wallDamage: 0
+  _pointFood: 10
+  _pointSoda: 20
+  restartLevelDay: 1
